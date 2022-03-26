@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="hidden" id="navbar">
+        <button onclick="gradeView()">Grade View</button>
+        <button onclick="addGrade()">Add Grade</button>
+    </nav>
+    <div id="main">
+        <div class="hidden" id="addgrade">
+            <input id="text" type="text">
+            <input id="grade" type="text">
+            <button onclick="submit()">Submit Grade</button>
+            <p id="incorrect"></p>
+        </div>
+        <div class="hidden" id="gradeview">
+            <p>Grades</p>
+            <div id="grades"></div>
+        </div>
+        <div id="login">
+            <input id="username" type="text">
+            <input id="password" type="password">
+            <button onclick="login()">Submit</button>
+            <p id="invalid"></p>
+        </div>
+    </div>
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>
